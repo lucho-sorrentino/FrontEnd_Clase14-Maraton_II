@@ -1,17 +1,17 @@
-//1. Solicitar el nombre del cliente (Guardar en un array)
-// 2. informar opciones, solicitar tipo de habitacion, 
-//3. Cantidad de dias de estadia 
-//4. Preguntar si quiere desayuno (Si es standar).
-//5. Evaluar si tiene mas de 5 noches, aplicar 10% de descuento.
-//6. Calcular y mostar total del cliente (Guardar en un array)
-//7. Calcular y mostar total de todas las reservas del hotel.
-//8. Mostrar listado de todos los clientes.
-//9. Mostrar el listado de habitaciones ocupadas. (mostrar pociciones del array)
+//1. Solicitar el nombre del cliente (guardar en un array)
+//2. Asignar habitación en un array.
+//3. Informar opciones y solicitar tipo de habitación.
+//3. Cantidad de días de estadía. 
+//4. Preguntar si quiere desayuno (si es estándar).
+//5. Evaluar si tiene más de 5 noches, aplicar 10% de descuento.
+//6. Calcular total del cliente (guardar en un array).
+//7. Calcular y mostar el monto total de todas las reservas del hotel (array).
+//8. Mostrar listado de todos los clientes (array).
+//9. Mostrar el listado de habitaciones ocupadas (array)
 
 let listaHuespedes = [];
 let montoHabitaciones = [];
 let habitacionesOcupadas = [];
-
 
 let nombre;
 let monto;
@@ -26,7 +26,6 @@ const costoTriple = 4300;
 const costoSuite = 7250;
 const costoDesayuno = 90;
 const montoDto = 0.9;  
-
 
 function aplicarDescuento(precio, dto, _days) {
     if (dto) {
